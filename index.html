@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zain Car & Bike Wash | Attavar, Mangaluru</title>
+<meta name="description" content="Zain Car & Bike Wash – Car wash, bike wash, polish, detailing & protection in Attavar, Mangaluru since 2017. Call 7795630807.">
+<meta name="theme-color" content="#0B0B0D">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--red:#E3141B;--black:#0B0B0D;--card:#17171B;--muted:#A9A9B2;--line:rgba(255,255,255,.08)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:var(--black);color:#fff;line-height:1.5;max-width:520px;margin:auto;padding-bottom:84px}
+a{color:inherit;text-decoration:none}
+.os{font-family:'Oswald',sans-serif;text-transform:uppercase;font-style:italic;font-weight:700}
+.red{color:var(--red)}
+
+/* Top bar */
+.top{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:2px solid var(--red)}
+.logo{display:flex;align-items:center;gap:8px}
+.mark{position:relative;font-family:'Oswald';font-weight:700;font-size:1.7rem;line-height:1;padding-top:6px}
+.mark svg{position:absolute;top:-6px;left:-4px;width:96px}
+.lt{font-family:'Oswald';font-size:.8rem;line-height:1.1;text-transform:uppercase}
+.lt small{display:block;color:var(--red);font-size:.62rem;letter-spacing:2px}
+.top a.ph{width:40px;height:40px;background:var(--red);display:grid;place-items:center;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+.top svg.i{width:18px;height:18px;stroke:#fff}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:46px 18px 30px;
+  background:linear-gradient(100deg,rgba(11,11,13,.95) 0%,rgba(11,11,13,.8) 55%,rgba(11,11,13,.45) 100%),
+  url('https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=900&q=75') 65% center/cover}
+.hero::before{content:"";position:absolute;top:0;right:-30%;width:80%;height:100%;background:linear-gradient(130deg,transparent 48%,rgba(227,20,27,.85) 48.5%,rgba(227,20,27,.85) 51%,transparent 51.5%);opacity:.75;pointer-events:none}
+.hero::after{content:"";position:absolute;left:0;top:16px;width:130px;height:8px;background:var(--red);transform:skewX(-35deg);transform-origin:top left}
+.hero>*{position:relative;z-index:1}
+.tag{display:flex;align-items:center;gap:8px;color:var(--red);font-size:.7rem;font-weight:600;letter-spacing:3px;text-transform:uppercase}
+.tag::before{content:"";width:24px;height:3px;background:var(--red)}
+.hero h1{font-size:clamp(2.4rem,11vw,3.2rem);line-height:.98;margin:12px 0 22px}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+.hb{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;font-weight:600;font-size:.9rem;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)}
+.hb svg{width:16px;height:16px}
+.hb.r{background:var(--red)}
+.hb.o{border-top:2px solid #fff;border-bottom:2px solid #fff;clip-path:none}
+.icons{display:flex;justify-content:space-between;gap:6px;margin-top:26px;max-width:330px}
+.icons div{display:flex;flex-direction:column;align-items:center;gap:5px;font-family:'Oswald';font-style:italic;font-weight:700;text-transform:uppercase;font-size:.72rem}
+.icons svg{width:26px;height:26px;stroke:#fff}
+.serv{position:absolute;right:16px;top:40px;z-index:1;text-align:center;border:2px solid var(--red);padding:8px 14px;background:rgba(11,11,13,.8);clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+.serv b{display:block;font-family:'Oswald';font-style:italic;font-size:1.6rem;line-height:1;color:var(--red)}
+.serv span{font-size:.55rem;letter-spacing:2px;text-transform:uppercase}
+@media(max-width:400px){.serv{position:static;display:inline-block;margin-top:22px}}
+
+/* Services */
+.wrap{padding:26px 18px}
+.label{display:flex;align-items:center;gap:8px;color:var(--red);font-size:.72rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px}
+.label::before{content:"";width:24px;height:3px;background:var(--red);transform:skewX(-30deg)}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.svc div{background:var(--card);border:1px solid var(--line);border-bottom:3px solid var(--red);padding:16px 6px;text-align:center;font-family:'Oswald';font-style:italic;text-transform:uppercase;font-size:.85rem}
+.svc svg{width:30px;height:30px;stroke:#fff;display:block;margin:0 auto 8px}
+
+/* Buttons */
+.btns{display:grid;gap:12px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;padding:16px;font-weight:600;font-size:1rem;clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%)}
+.btn svg{width:20px;height:20px}
+.b-red{background:var(--red)}
+.b-wa{background:#1FAF55}
+.b-out{border:2px solid #fff;clip-path:none}
+
+
+/* Pill buttons */
+.pill{--c:#2BD48C;display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:13px 28px;border:1.5px solid var(--c);border-radius:999px;background:rgba(255,255,255,.02);font-weight:600;font-size:.95rem;color:#fff;transition:.3s;box-shadow:inset 0 0 14px color-mix(in srgb,var(--c) 10%,transparent)}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--c);box-shadow:0 0 8px var(--c);animation:blink 1.8s infinite}
+.pill:hover,.pill:active{background:color-mix(in srgb,var(--c) 14%,transparent);box-shadow:0 0 18px color-mix(in srgb,var(--c) 35%,transparent)}
+.pill.g{--c:#2BD48C}.pill.r{--c:#E3141B}.pill.w{--c:#FFFFFF}
+@keyframes blink{50%{opacity:.35}}
+.btns{display:grid;gap:12px}
+.btns .pill{padding:15px}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+
+/* Info */
+.info{background:var(--card);border-left:4px solid var(--red);padding:18px}
+.row{display:flex;gap:14px;align-items:flex-start;padding:10px 0}
+.row+.row{border-top:1px solid var(--line)}
+.row svg{min-width:22px;width:22px;height:22px;stroke:var(--red);margin-top:2px}
+.row small{display:block;color:var(--muted);font-size:.7rem;letter-spacing:1px;text-transform:uppercase}
+.row a{display:block;font-weight:600}
+
+footer{text-align:center;color:var(--muted);font-size:.75rem;padding:10px 18px 20px}
+
+/* Sticky bottom bar */
+.bar{position:fixed;bottom:0;left:0;right:0;display:grid;grid-template-columns:1fr 1fr;max-width:520px;margin:auto;z-index:10;box-shadow:0 -6px 20px rgba(0,0,0,.6)}
+.bar a{display:flex;align-items:center;justify-content:center;gap:8px;padding:17px;font-weight:600}
+.bar svg{width:20px;height:20px}
+.bar .c{background:var(--red)}.bar .w{background:#1FAF55}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <a href="#" class="logo">
+    <div class="mark"><svg viewBox="0 0 120 22" fill="none"><path d="M2 20 C20 6,50 2,70 6 C85 9,100 14,118 16" stroke="#E3141B" stroke-width="3" stroke-linecap="round"/></svg>Z<span class="red">A</span>IN</div>
+    <div class="lt">Car & Bike Wash<small>Since 2017</small></div>
+  </a>
+  <a href="tel:+917795630807" class="ph" aria-label="Call"><svg class="i" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+</header>
+
+<section class="hero">
+  <div class="tag">Attavar, Mangaluru</div>
+  <h1 class="os">Premium<br>Car Wash <span class="red">&</span><br>Detailing</h1>
+  <div class="hero-btns">
+    <a class="pill g" href="https://wa.me/917795630807?text=Hi%20Zain%20Car%20%26%20Bike%20Wash%2C%20I%20would%20like%20to%20book%20a%20wash." target="_blank" rel="noopener"><i></i>Book a Wash</a>
+    <a class="pill r" href="tel:+917795630807"><i></i>Call Now</a>
+    <a class="pill w" href="https://www.google.com/maps/search/?api=1&query=Nandigudda+Road+Attavar+Mangaluru+575001" target="_blank" rel="noopener"><i></i>Get Directions</a>
+  </div>
+  <div class="serv"><b>2017</b><span>Serving Since</span></div>
+</section>
+
+<section class="wrap">
+  <div class="label">Our Services</div>
+  <div class="svc">
+    <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M5 17h14M3 13l2-6h14l2 6v4H3z"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>Car Wash</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="5" cy="16" r="3"/><circle cx="19" cy="16" r="3"/><path d="M5 16l4-7h5l5 7M9 9h-2M14 9l2-3h2"/></svg>Bike Wash</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/></svg>Polish</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M7 21h10M8 3h8v9H8zM6 12h12l-1 5H7z"/></svg>Interior</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>Detail</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><circle cx="8" cy="16" r="3"/><circle cx="16" cy="16" r="3"/></svg>Protect</div>
+  </div>
+</section>
+
+
+
+<section class="wrap" style="padding-top:0">
+  <div class="label">Contact</div>
+  <div class="info">
+    <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/></svg>
+      <div><small>Address</small>Nandigudda Rd, near Aaron Caterers, St Joseph Nagar, Attavar, Mangaluru 575001</div></div>
+    <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      <div><small>Phone</small><a href="tel:+917795630807">+91 77956 30807</a><a href="tel:+918105543677">+91 81055 43677</a></div></div>
+    <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+      <div><small>Proprietor</small>Ivan Dsouza</div></div>
+  </div>
+</section>
+
+<footer>© <span id="y"></span> Zain Car & Bike Wash, Mangaluru</footer>
+
+<nav class="bar">
+  <a class="c" href="tel:+917795630807"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call</a>
+  <a class="w" href="https://wa.me/917795630807" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>WhatsApp</a>
+</nav>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
