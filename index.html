@@ -3,149 +3,197 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zain Car & Bike Wash | Attavar, Mangaluru</title>
-<meta name="description" content="Zain Car & Bike Wash – Car wash, bike wash, polish, detailing & protection in Attavar, Mangaluru since 2017. Call 7795630807.">
-<meta name="theme-color" content="#0B0B0D">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<title>Zain Car & Bike Wash | Attavar, Mangaluru | Since 2017</title>
+<meta name="description" content="Zain Car & Bike Wash – Premium car wash, bike wash, polish, interior cleaning, detailing & protection in Attavar, Mangaluru since 2017. Call +91 77956 30807.">
+<meta name="theme-color" content="#0f1114">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--red:#E3141B;--black:#0B0B0D;--card:#17171B;--muted:#A9A9B2;--line:rgba(255,255,255,.08)}
+:root{
+  --accent:#3cc3a2;--accent-d:#2fa688;--accent-l:#7fe3c9;
+  --dark:#0f1114;--dark2:#16191d;--ink:#15181c;--text:#5b6168;--line:#e7e9eb;--light:#f6f8f8;
+  --ease:cubic-bezier(.2,.75,.2,1);
+}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:var(--black);color:#fff;line-height:1.5;max-width:520px;margin:auto;padding-bottom:84px}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--text);background:#fff;line-height:1.7;font-size:15px;max-width:520px;margin:auto;overflow-x:hidden;-webkit-font-smoothing:antialiased;box-shadow:0 0 60px rgba(0,0,0,.08)}
 a{color:inherit;text-decoration:none}
-.os{font-family:'Oswald',sans-serif;text-transform:uppercase;font-style:italic;font-weight:700}
-.red{color:var(--red)}
+h1,h2,h3,h4{font-family:'Oswald',sans-serif;color:var(--ink);line-height:1.15;letter-spacing:.3px;font-weight:500}
+.wrap{padding:0 22px}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.7rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--accent-d);margin-bottom:12px}
+.eyebrow::before{content:"";width:28px;height:1.5px;background:var(--accent)}
 
-/* Top bar */
-.top{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:2px solid var(--red)}
-.logo{display:flex;align-items:center;gap:8px}
-.mark{position:relative;font-family:'Oswald';font-weight:700;font-size:1.7rem;line-height:1;padding-top:6px}
-.mark svg{position:absolute;top:-6px;left:-4px;width:96px}
-.lt{font-family:'Oswald';font-size:.8rem;line-height:1.1;text-transform:uppercase}
-.lt small{display:block;color:var(--red);font-size:.62rem;letter-spacing:2px}
-.top a.ph{width:40px;height:40px;background:var(--red);display:grid;place-items:center;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
-.top svg.i{width:18px;height:18px;stroke:#fff}
+/* HEADER */
+header{position:sticky;top:0;z-index:50;background:rgba(12,14,17,.85);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;padding:0 20px}
+.logo{display:flex;flex-direction:column;line-height:1}
+.logo b{font-family:'Oswald';font-weight:600;font-size:1.55rem;color:#fff;letter-spacing:3px}
+.logo b span{color:var(--accent)}
+.logo small{font-weight:600;font-size:.5rem;letter-spacing:4px;color:rgba(255,255,255,.7);text-transform:uppercase;margin-top:4px}
+.nav-cta{display:inline-flex;align-items:center;gap:9px;padding:9px 18px;border-radius:50px;border:1px solid rgba(60,195,162,.55);color:#fff;font-size:.8rem;font-weight:500;transition:.35s}
+.nav-cta i,.pill i{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:ping 2s infinite}
+.nav-cta:active{background:var(--accent);color:#06221b}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(60,195,162,.7)}70%{box-shadow:0 0 0 9px rgba(60,195,162,0)}100%{box-shadow:0 0 0 0 rgba(60,195,162,0)}}
 
-/* Hero */
-.hero{position:relative;overflow:hidden;padding:46px 18px 30px;
-  background:linear-gradient(100deg,rgba(11,11,13,.95) 0%,rgba(11,11,13,.8) 55%,rgba(11,11,13,.45) 100%),
-  url('https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=900&q=75') 65% center/cover}
-.hero::before{content:"";position:absolute;top:0;right:-30%;width:80%;height:100%;background:linear-gradient(130deg,transparent 48%,rgba(227,20,27,.85) 48.5%,rgba(227,20,27,.85) 51%,transparent 51.5%);opacity:.75;pointer-events:none}
-.hero::after{content:"";position:absolute;left:0;top:16px;width:130px;height:8px;background:var(--red);transform:skewX(-35deg);transform-origin:top left}
-.hero>*{position:relative;z-index:1}
-.tag{display:flex;align-items:center;gap:8px;color:var(--red);font-size:.7rem;font-weight:600;letter-spacing:3px;text-transform:uppercase}
-.tag::before{content:"";width:24px;height:3px;background:var(--red)}
-.hero h1{font-size:clamp(2.4rem,11vw,3.2rem);line-height:.98;margin:12px 0 22px}
-.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
-.hb{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;font-weight:600;font-size:.9rem;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)}
-.hb svg{width:16px;height:16px}
-.hb.r{background:var(--red)}
-.hb.o{border-top:2px solid #fff;border-bottom:2px solid #fff;clip-path:none}
-.icons{display:flex;justify-content:space-between;gap:6px;margin-top:26px;max-width:330px}
-.icons div{display:flex;flex-direction:column;align-items:center;gap:5px;font-family:'Oswald';font-style:italic;font-weight:700;text-transform:uppercase;font-size:.72rem}
-.icons svg{width:26px;height:26px;stroke:#fff}
-.serv{position:absolute;right:16px;top:40px;z-index:1;text-align:center;border:2px solid var(--red);padding:8px 14px;background:rgba(11,11,13,.8);clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
-.serv b{display:block;font-family:'Oswald';font-style:italic;font-size:1.6rem;line-height:1;color:var(--red)}
-.serv span{font-size:.55rem;letter-spacing:2px;text-transform:uppercase}
-@media(max-width:400px){.serv{position:static;display:inline-block;margin-top:22px}}
-
-/* Services */
-.wrap{padding:26px 18px}
-.label{display:flex;align-items:center;gap:8px;color:var(--red);font-size:.72rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px}
-.label::before{content:"";width:24px;height:3px;background:var(--red);transform:skewX(-30deg)}
-.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.svc div{background:var(--card);border:1px solid var(--line);border-bottom:3px solid var(--red);padding:16px 6px;text-align:center;font-family:'Oswald';font-style:italic;text-transform:uppercase;font-size:.85rem}
-.svc svg{width:30px;height:30px;stroke:#fff;display:block;margin:0 auto 8px}
+/* HERO */
+.hero{position:relative;overflow:hidden;background:#0b0d10;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=900&q=75') 62% center/cover;transform:scale(1.08);animation:zoom 9s ease-out forwards}
+@keyframes zoom{to{transform:scale(1)}}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,10,13,.92) 0%,rgba(8,10,13,.6) 60%,rgba(8,10,13,.3) 100%),linear-gradient(0deg,rgba(8,10,13,.95) 0%,transparent 45%)}
+.hero-glow{position:absolute;width:520px;height:520px;left:-240px;top:-240px;border-radius:50%;background:radial-gradient(circle,rgba(60,195,162,.25),transparent 62%);pointer-events:none}
+.hero-inner{position:relative;z-index:2;padding:64px 22px 44px}
+.hero-tag{display:flex;align-items:center;gap:12px;font-size:.62rem;letter-spacing:4px;text-transform:uppercase;color:var(--accent-l);margin-bottom:24px}
+.hero-tag::before{content:"";width:38px;height:1px;background:linear-gradient(90deg,var(--accent),transparent)}
+.hero h1{color:#fff;font-size:clamp(2.3rem,10.5vw,3rem);font-weight:300;line-height:1.1;margin-bottom:30px}
+.hero h1 .ln{display:block;overflow:hidden}
+.hero h1 .ln span{display:inline-block;transform:translateY(105%);animation:rise 1.1s var(--ease) forwards}
+.hero h1 .ln:nth-child(2) span{animation-delay:.14s}
+.hero h1 .metal{font-weight:500;background:linear-gradient(100deg,#3cc3a2 0%,#c9fff0 40%,#3cc3a2 60%,#1f8f74 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rise 1.1s var(--ease) .14s forwards,sheen 6s linear 1.5s infinite}
+@keyframes rise{to{transform:none}}
+@keyframes sheen{to{background-position:-220% 0}}
+.fade-up{opacity:0;transform:translateY(20px);animation:fu 1s var(--ease) .45s forwards}
+@keyframes fu{to{opacity:1;transform:none}}
 
 /* Buttons */
-.btns{display:grid;gap:12px}
-.btn{display:flex;align-items:center;justify-content:center;gap:10px;padding:16px;font-weight:600;font-size:1rem;clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%)}
-.btn svg{width:20px;height:20px}
-.b-red{background:var(--red)}
-.b-wa{background:#1FAF55}
-.b-out{border:2px solid #fff;clip-path:none}
+.cta{display:flex;flex-direction:column;gap:12px}
+.btn-hero{display:flex;align-items:center;justify-content:space-between;padding:7px 7px 7px 26px;border-radius:50px;background:linear-gradient(135deg,#3cc3a2,#5fe0bf);color:#06221b;font-weight:600;font-size:.95rem;box-shadow:0 18px 40px -14px rgba(60,195,162,.75)}
+.btn-hero b{width:42px;height:42px;border-radius:50%;background:#06221b;color:var(--accent);display:grid;place-items:center;font-weight:400;transition:.35s}
+.btn-hero:active b{transform:rotate(-45deg)}
+.pill-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pill{display:flex;align-items:center;justify-content:center;gap:10px;padding:13px 10px;border-radius:50px;border:1px solid rgba(60,195,162,.5);background:rgba(255,255,255,.03);color:#fff;font-size:.88rem;font-weight:500;transition:.3s}
+.pill.w{border-color:rgba(255,255,255,.3)}
+.pill.w i{background:#fff;animation:none}
+.pill:active{background:rgba(60,195,162,.15)}
 
+/* Hero foot */
+.hero-foot{position:relative;z-index:2;border-top:1px solid rgba(255,255,255,.08);background:rgba(8,10,13,.5);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.metas{display:flex;align-items:center;justify-content:space-between;padding:20px 22px}
+.metas>i{width:1px;height:30px;background:rgba(255,255,255,.12)}
+.metas div{display:flex;flex-direction:column;align-items:center}
+.metas b{font-family:'Oswald';font-weight:400;font-size:1.35rem;color:#fff;line-height:1}
+.metas b em{font-style:normal;color:var(--accent)}
+.metas span{font-size:.55rem;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:7px}
 
-/* Pill buttons */
-.pill{--c:#2BD48C;display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:13px 28px;border:1.5px solid var(--c);border-radius:999px;background:rgba(255,255,255,.02);font-weight:600;font-size:.95rem;color:#fff;transition:.3s;box-shadow:inset 0 0 14px color-mix(in srgb,var(--c) 10%,transparent)}
-.pill i{width:8px;height:8px;border-radius:50%;background:var(--c);box-shadow:0 0 8px var(--c);animation:blink 1.8s infinite}
-.pill:hover,.pill:active{background:color-mix(in srgb,var(--c) 14%,transparent);box-shadow:0 0 18px color-mix(in srgb,var(--c) 35%,transparent)}
-.pill.g{--c:#2BD48C}.pill.r{--c:#E3141B}.pill.w{--c:#FFFFFF}
-@keyframes blink{50%{opacity:.35}}
-.btns{display:grid;gap:12px}
-.btns .pill{padding:15px}
-.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+/* SERVICES */
+.section{padding:64px 0}
+.section h2{font-size:1.9rem;margin-bottom:28px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{border:1px solid var(--line);border-radius:8px;padding:22px 16px;background:#fff;position:relative;overflow:hidden;transition:.4s var(--ease)}
+.card::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--accent);transition:.45s}
+.card:active{transform:translateY(-4px)}
+.card:active::after,.card.in::after{width:100%}
+.card svg{width:32px;height:32px;stroke:var(--ink);fill:none;stroke-width:1.3;margin-bottom:14px}
+.card.in svg{stroke:var(--accent-d)}
+.card h3{font-size:1.05rem;font-weight:500}
 
-/* Info */
-.info{background:var(--card);border-left:4px solid var(--red);padding:18px}
-.row{display:flex;gap:14px;align-items:flex-start;padding:10px 0}
-.row+.row{border-top:1px solid var(--line)}
-.row svg{min-width:22px;width:22px;height:22px;stroke:var(--red);margin-top:2px}
-.row small{display:block;color:var(--muted);font-size:.7rem;letter-spacing:1px;text-transform:uppercase}
-.row a{display:block;font-weight:600}
+/* CONTACT (dark) */
+.dark{background:var(--dark2);color:#a5a9ae}
+.dark h2{color:#fff}
+.dark h2 span{color:var(--accent)}
+.info{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid #2a2e33}
+.info:last-child{border-bottom:0}
+.circle{width:46px;height:46px;border-radius:50%;background:var(--accent);display:grid;place-items:center;flex-shrink:0;box-shadow:0 10px 24px -10px rgba(60,195,162,.8)}
+.circle svg{width:19px;height:19px;stroke:#fff;fill:none;stroke-width:1.8}
+.info small{display:block;font-size:.66rem;letter-spacing:2.5px;text-transform:uppercase;color:#7d8288;margin-bottom:3px}
+.info p,.info a{color:#e6e8ea;font-size:.92rem;line-height:1.55}
+.info a{display:block;font-family:'Oswald';font-size:1.15rem;font-weight:400;letter-spacing:.5px}
+.info a:active{color:var(--accent)}
 
-footer{text-align:center;color:var(--muted);font-size:.75rem;padding:10px 18px 20px}
+/* FOOTER */
+footer{background:var(--dark);color:#7d8288;border-top:2px solid var(--accent);padding:22px 22px 26px;font-size:.75rem;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 
-/* Sticky bottom bar */
-.bar{position:fixed;bottom:0;left:0;right:0;display:grid;grid-template-columns:1fr 1fr;max-width:520px;margin:auto;z-index:10;box-shadow:0 -6px 20px rgba(0,0,0,.6)}
-.bar a{display:flex;align-items:center;justify-content:center;gap:8px;padding:17px;font-weight:600}
-.bar svg{width:20px;height:20px}
-.bar .c{background:var(--red)}.bar .w{background:#1FAF55}
+/* Floating */
+.wa,.call{position:fixed;z-index:60;border-radius:50%;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.3);transition:.3s}
+.wa{right:18px;bottom:18px;width:54px;height:54px;background:#25d366}.wa svg{width:28px;fill:#fff}
+.call{right:21px;bottom:84px;width:48px;height:48px;background:var(--accent)}.call svg{width:21px;stroke:#06221b;fill:none;stroke-width:2}
+@media(min-width:521px){.wa{right:calc(50% - 242px)}.call{right:calc(50% - 239px)}}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(30px);transition:.9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hero h1 .ln span,.fade-up,.reveal{transform:none;opacity:1}}
 </style>
 </head>
 <body>
 
-<header class="top">
-  <a href="#" class="logo">
-    <div class="mark"><svg viewBox="0 0 120 22" fill="none"><path d="M2 20 C20 6,50 2,70 6 C85 9,100 14,118 16" stroke="#E3141B" stroke-width="3" stroke-linecap="round"/></svg>Z<span class="red">A</span>IN</div>
-    <div class="lt">Car & Bike Wash<small>Since 2017</small></div>
-  </a>
-  <a href="tel:+917795630807" class="ph" aria-label="Call"><svg class="i" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+<header>
+  <div class="nav">
+    <a href="#home" class="logo"><b>Z<span>A</span>IN</b><small>Car & Bike Wash</small></a>
+    <a href="#contact" class="nav-cta"><i></i>Contact Us</a>
+  </div>
 </header>
 
-<section class="hero">
-  <div class="tag">Attavar, Mangaluru</div>
-  <h1 class="os">Premium<br>Car Wash <span class="red">&</span><br>Detailing</h1>
-  <div class="hero-btns">
-    <a class="pill g" href="https://wa.me/917795630807?text=Hi%20Zain%20Car%20%26%20Bike%20Wash%2C%20I%20would%20like%20to%20book%20a%20wash." target="_blank" rel="noopener"><i></i>Book a Wash</a>
-    <a class="pill r" href="tel:+917795630807"><i></i>Call Now</a>
-    <a class="pill w" href="https://www.google.com/maps/search/?api=1&query=Nandigudda+Road+Attavar+Mangaluru+575001" target="_blank" rel="noopener"><i></i>Get Directions</a>
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-shade"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-tag fade-up" style="animation-delay:0s">Attavar &nbsp;·&nbsp; Est. 2017</div>
+    <h1>
+      <span class="ln"><span>Premium Car Wash</span></span>
+      <span class="ln"><span class="metal">&amp; Detailing.</span></span>
+    </h1>
+    <div class="cta fade-up">
+      <a class="btn-hero" href="https://wa.me/917795630807?text=Hi%20Zain%20Car%20%26%20Bike%20Wash%2C%20I%20would%20like%20to%20book%20a%20wash." target="_blank" rel="noopener">Book a Wash <b>→</b></a>
+      <div class="pill-row">
+        <a class="pill" href="tel:+917795630807"><i></i>Call Now</a>
+        <a class="pill w" href="https://www.google.com/maps/search/?api=1&query=Nandigudda+Road+Attavar+Mangaluru+575001" target="_blank" rel="noopener"><i></i>Directions</a>
+      </div>
+    </div>
   </div>
-  <div class="serv"><b>2017</b><span>Serving Since</span></div>
-</section>
-
-<section class="wrap">
-  <div class="label">Our Services</div>
-  <div class="svc">
-    <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M5 17h14M3 13l2-6h14l2 6v4H3z"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>Car Wash</div>
-    <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="5" cy="16" r="3"/><circle cx="19" cy="16" r="3"/><path d="M5 16l4-7h5l5 7M9 9h-2M14 9l2-3h2"/></svg>Bike Wash</div>
-    <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/></svg>Polish</div>
-    <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M7 21h10M8 3h8v9H8zM6 12h12l-1 5H7z"/></svg>Interior</div>
-    <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>Detail</div>
-    <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><circle cx="8" cy="16" r="3"/><circle cx="16" cy="16" r="3"/></svg>Protect</div>
-  </div>
-</section>
-
-
-
-<section class="wrap" style="padding-top:0">
-  <div class="label">Contact</div>
-  <div class="info">
-    <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/></svg>
-      <div><small>Address</small>Nandigudda Rd, near Aaron Caterers, St Joseph Nagar, Attavar, Mangaluru 575001</div></div>
-    <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
-      <div><small>Phone</small><a href="tel:+917795630807">+91 77956 30807</a><a href="tel:+918105543677">+91 81055 43677</a></div></div>
-    <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
-      <div><small>Proprietor</small>Ivan Dsouza</div></div>
+  <div class="hero-foot">
+    <div class="metas">
+      <div><b>2017</b><span>Established</span></div><i></i>
+      <div><b><span id="yrs" style="font:inherit;letter-spacing:0;color:inherit;margin:0;text-transform:none">9</span><em>+</em></b><span>Years</span></div><i></i>
+      <div><b>Car<em>&</em>Bike</b><span>Care</span></div>
+    </div>
   </div>
 </section>
 
-<footer>© <span id="y"></span> Zain Car & Bike Wash, Mangaluru</footer>
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="eyebrow reveal">What We Do</div>
+    <h2 class="reveal">Our Services</h2>
+    <div class="cards">
+      <div class="card reveal"><svg viewBox="0 0 24 24"><path d="M5 17h14M3 13l2-6h14l2 6v4H3z"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg><h3>Car Wash</h3></div>
+      <div class="card reveal"><svg viewBox="0 0 24 24"><circle cx="5" cy="16" r="3"/><circle cx="19" cy="16" r="3"/><path d="M5 16l4-7h5l5 7M9 9h-2M14 9l2-3h2"/></svg><h3>Bike Wash</h3></div>
+      <div class="card reveal"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/><path d="M19 15l.8 1.7 1.7.8-1.7.8L19 20l-.8-1.7-1.7-.8 1.7-.8z"/></svg><h3>Polishing</h3></div>
+      <div class="card reveal"><svg viewBox="0 0 24 24"><path d="M7 21h10M8 3h8v9H8zM6 12h12l-1 5H7z"/></svg><h3>Interior Cleaning</h3></div>
+      <div class="card reveal"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><h3>Detailing</h3></div>
+      <div class="card reveal"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><circle cx="8" cy="16" r="3"/><circle cx="16" cy="16" r="3"/></svg><h3>Protection</h3></div>
+    </div>
+  </div>
+</section>
 
-<nav class="bar">
-  <a class="c" href="tel:+917795630807"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call</a>
-  <a class="w" href="https://wa.me/917795630807" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>WhatsApp</a>
-</nav>
+<section class="section dark" id="contact">
+  <div class="wrap">
+    <div class="eyebrow reveal">Contact</div>
+    <h2 class="reveal">Visit <span>Us</span></h2>
+    <div class="info reveal"><div class="circle"><svg viewBox="0 0 24 24"><path d="M12 22s8-6 8-12a8 8 0 10-16 0c0 6 8 12 8 12z"/><circle cx="12" cy="10" r="3"/></svg></div>
+      <div><small>Address</small><p>Nandigudda Rd, near Aaron Caterers, St Joseph Nagar, Attavar, Mangaluru 575001</p></div></div>
+    <div class="info reveal"><div class="circle"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg></div>
+      <div><small>Call / WhatsApp</small><a href="tel:+917795630807">+91 77956 30807</a><a href="tel:+918105543677">+91 81055 43677</a></div></div>
+    <div class="info reveal"><div class="circle"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+      <div><small>Proprietor</small><p>Ivan Dsouza</p></div></div>
+  </div>
+</section>
 
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+<footer><span>© <span id="yr"></span> Zain Car & Bike Wash</span><span>Mangaluru · Since 2017</span></footer>
+
+<a class="call" href="tel:+917795630807" aria-label="Call"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg></a>
+<a class="wa" href="https://wa.me/917795630807?text=Hi%20Zain%20Car%20%26%20Bike%20Wash%2C%20I%20would%20like%20to%20book%20a%20wash." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 00-11.2 19.6L3 29l6.6-1.7A13 13 0 1016 3zm0 23.6a10.6 10.6 0 01-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1116 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 01-4.3-3.7c-.3-.6.3-.5 1-1.7a.6.6 0 000-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 00-.9.4 3.6 3.6 0 00-1.1 2.7 6.3 6.3 0 001.3 3.3 14.4 14.4 0 005.5 4.9c2 .9 2.8.9 3.9.8a3.2 3.2 0 002.1-1.5 2.6 2.6 0 00.2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg></a>
+
+<script>
+(function(){
+  var y=new Date().getFullYear();
+  document.getElementById('yr').textContent=y;
+  document.getElementById('yrs').textContent=y-2017;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+  });},{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(function(el,i){el.style.transitionDelay=(i%2)*0.1+'s';io.observe(el);});
+})();
+</script>
 </body>
 </html>
